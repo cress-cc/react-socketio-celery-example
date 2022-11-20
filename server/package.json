@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "celery-node": "^0.5.9",
+    "dotenv": "^16.0.3",
+    "socket.io": "^4.5.3",
+    "uuid": "^7.0.3"
+  }
+}

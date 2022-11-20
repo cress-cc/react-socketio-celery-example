@@ -1,0 +1,9 @@
+.App {
+  width: auto;
+  max-width: 600px;
+  margin: auto;
+}
+
+.usage {
+  font-weight: bold;
+}
