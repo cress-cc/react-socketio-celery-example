@@ -13,7 +13,7 @@ const client = celery.createClient(
 io.on('connection', (socket) => {
   socket.on('write_request', (msg) => {
     const task = client.createTask('tasks.example');
-    const result = task.applyAsync(['TEST']);
+    const result = task.applyAsync([msg.prompt]);
     result.get().then(data => {
       socket.emit('write_result', {result: true, data: data});
     });
